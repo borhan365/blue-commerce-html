@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ecommerce Home Page</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- theme css -->
+    <link rel="stylesheet" href="assets/css/borhan.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+<!-- Mobile Menu section -->
+<section>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="mobile-header-menu-section">
+                <!-- Left Barger menu icon -->
+                <div class="bargerMenu" onclick="OpenMobileMenu()">
+                    <i class="fa fa-bars"></i>  
+                </div>
+
+                <!-- Middle logo -->
+                <div class="mobile-header-logo">
+                    <a href="#"><img src="assets/images/bdbaba.png" class="img-fluid" alt=""></a>
+                </div>
+
+                <!-- Right Menus -->
+                <div class="right-mobile-menu" onclick="MobileCartSidebarToggle()">
+                    <i class="fa fa-shopping-basket"></i>  &nbsp;<span class="badge badge-light">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Menu section -->
+
+<!-- Left fixed sidebar -->
+<section>
+    <div class="main-left-fixed-sidebar" id="LeftSidebar">
+        <div class="sidebar-logo-close-icon">
+            <div class="sidebar-logo-header">
+                <img src="assets/images/bdbaba.png" alt="">
+            </div>
+            <div class="cross-icon">
+                <i class="fa fa-times" onclick="SidebarToggle()"></i>
+            </div>
+        </div>
+
+        <!-- Middle section -->
+
+        <!-- Profile picture and content area -->
+        <div class="sidebar-profile-box">
+            <div class="profile-pic">
+                <a href="profile.html"><img src="assets/images/others/happy-girl.jpg" alt=""></a>
+            </div>
+            <div class="sidebar-profile-content">
+                <h2>Md Borhan Uddin</h2>
+                <p>01851590081</p>
+                <p><a href="profile.html">Manage Accounts</a></p>
+            </div>
+        </div>
+
+        <!-- Menus -->
+        <div class="sidebar-middle-menus">
+            <ul>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                <li><a href="#">Mobile <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Men <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Women <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Kids <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Toys <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Electronics Devices <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Sports<span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Necklace <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Earrings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Rings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Anklet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Locket Pen dust <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Fair Sticks <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bracelet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bras less <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Nose Pin <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry Box <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Stone Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+            </ul>
+        </div>
+
+        <div class="left-sidebar-footer">
+            <a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a> |<a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a>
+        </div>
+
+    </div>
+</section>
+<!-- Left fixed sidebar -->
+
+<!-- Right cart sidebar fixed -->
+<section>
+    <div class="main-cart-fixed-sidebar" id="CartSidebar">
+        
+        <!-- My cart and Cross icon -->
+        <div class="cartTopHeader">
+            <i class="fa fa-times" onclick="CartSidebarToggle()"></i>
+            <h5>My Cart</h5>
+        </div>
+
+        <!-- All Products list -->
+        <div class="main-all-product-in-cart">
+
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer section -->
+        <div class="inCart-footer">
+
+            <!-- Subtotal -->
+            <div class="inCart-subtotal FLEX">
+                <p>Sub Total : </p>
+                <p> ৳ 530</p>
+            </div>
+
+            <!-- Shipping express -->
+            <div class="inCart-shippingAddress FLEX">
+                <p>Shipping (Express) : </p>
+                <p> ৳ 50</p>
+            </div>
+
+            <!-- total  -->
+            <div class="inCart-total FLEX">
+                <p><b>Total Shopping :</b></p>
+                <p><b> ৳ 630</b></p>
+            </div>
+
+            <a href="cart.html"><button class="btn btn-success w-100 my-2 checkoutBtn">Process to checkout</button></a>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- Right cart sidebar fixed -->
+
+
+<!-- Mobile Footer Fixed menu -->
+<section class="mobileFooter-fixed-navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-mobile-footer-menu">
+                    <div class="footerMenuItems footerHome">
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>  <span>Home</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerChat">
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>  <span>Chat</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerCart">
+                        <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerAccount">
+                        <a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>  <span>Account</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Footer Fixed menu -->
+
+
+
+<!-- Top Header -->
+<section class="topHeader-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="top-left-section">
+                    <p>Hotline: +88 0180000000000</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="top-right-side">
+
+                    <!-- My Account -->
+                    <div class="dropdown show language-box">
+                        <a class="btn dropdown-toggle languageBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            My Account 
+                        </a>
+                        
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> Bangla
+                            </a>
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> English
+                            </a>
+
+                        </div>
+                    </div>
+                    
+                    <!-- Language -->
+                    <div class="dropdown show language-box">
+                        <a class="btn dropdown-toggle languageBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Language 
+                        </a>
+                        
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> Bangla
+                            </a>
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> English
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Main category -->
+                    <!-- <div class="threeMenu">
+                        <li><a class="importer" href="registation.html">Importer &nbsp;</a></li>
+                        <li><a class="marchent" href="registation.html">&nbsp; Vendor &nbsp;</a></li>
+                        <li><a class="vendor" href="registation.html">&nbsp; marchent</a></li>
+                    </div> -->
+
+                    <!-- Currency -->
+                    <div class="dropdown show currency-box">
+                        <a class="btn dropdown-toggle currencyBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/images/others/bd.svg" alt="" style="width: 20px;"> BDT
+                        </a>
+                        
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item currencyItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> BDT
+                            </a>
+
+                            <a class="dropdown-item currencyItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> USD
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Top Header -->
+
+
+
+<header class="header-area">
+
+    <!-- Header middle -->
+    <div class="header-middle">
+        <div class="container">
+             <div class="row align-items-center">
+                <div class="col-md-2">
+                   <div class="logo-area">
+                       <a href="index.html"><img src="assets/images/bdbaba.png" alt=""></a>
+                   </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="search-form">
+                        <form action="#" method="POST">
+                           <select name="" id="search-category">
+                               <option value="Products">Products</option>
+                               <option value="Products">Products</option>
+                               <option value="Suppliers">Suppliers</option>
+                           </select>
+                           <input type="text" placeholder="What Are You Looking For..." name="search">
+                           <a href="" class="search-btn"><i class="fa fa-search"></i> Search</a>
+                        </form>
+                    </div>
+                </div>
+                <!-- Card -->
+            <div class="col-md-3 text-right d-flex align-items-center justify-content-end">
+                <div class="login-ragistration">
+                    <a href="registation.html"><i class="fa fa-user w-auto d-inline bg-success text-white p-2 rounded mr-1"></i></a>
+                    <a href="login.html"><i class="fa fa-sign-in w-auto d-inline bg-info text-white p-2 rounded mr-1" aria-hidden="true"></i></a>
+                </div>
+                <div class="middle-cart">
+                    <button type="button" class="btn btn-success BrandColorbutton" onclick="CartSidebarToggle()">
+                        <i class="fa fa-shopping-basket"></i> Cart &nbsp;<span class="badge TopCart badge-light">0</span>
+                      </button>
+                      <span><a href="profile.html"><img src="assets/images/others/happy-girl.jpg" class="rounded-circle w-25" alt=""></a></span>
+                </div>
+            </div>
+             </div>
+        </div>
+    </div>
+
+
+    <!--header bottom-->
+    <div class="header-bottom" id="MainMenu">
+        <div class="container">
+            <nav class="headerNavbar">
+
+
+                <div id="navbarSupportedContent">
+                  <ul>
+                    <li class="nav-item active">
+                      <i onclick="SidebarToggle()" class="fa fa-bars HomepageBar"></i>
+                    </li>
+                    <li class="hover-mega-menu Electronics"> <a href="#">Electronics <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                    
+                        <div class="main-hover-mega-menu-wrapper">
+    
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Women's Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Infant & Toddlers Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </li>
+                    <li class="hover-mega-menu"><a href="#">Home Apperal <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                        
+                        <div class="main-hover-mega-menu-wrapper">
+    
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Women's Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Infant & Toddlers Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </li>
+                    <li><a href="category.html">Man Fashions</a></li>
+                    <li><a href="category.html">Women Fashions</a></li>
+                    <li><a href="category.html">Jewelry</a></li>
+                    <li><a href="category.html">Baby products</a></li>
+                    <li><a href="category.html">Electronics</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+</header>
+
+
+<!-- Start main Hero section -->
+<section class="main-hero-section">
+    <!-- Hero left sidebar menus -->
+
+    <!-- Hero right slider section -->
+        <!-- Slider -->
+        <div class="hero-right-slider">
+        <div class="swiper-container hero-right-slider">
+            <div class="swiper-wrapper">
+
+                <div class="">
+                    <div class="hero-right-slider-items">
+                        <img src="assets/images/photos/02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-right-slider-items">
+                        <img src="assets/images/photos/04.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-right-slider-items">
+                        <img src="assets/images/photos/03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-right-slider-items">
+                        <img src="assets/images/photos/01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-right-slider-items">
+                        <img src="assets/images/photos/05.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- Start main Hero section -->
+
+<!-- mini ads box -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Mini slider -->
+                <div class="main-mini-slider mt-1">
+                    <div class="mini-slider-column">
+                        <div class="hero-right-mini-slider">
+                            <img src="assets/images/photos/8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="mini-slider-column">
+                        <div class="hero-right-mini-slider">
+                            <img src="assets/images/photos/19.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Category -->
+<section class="category-section">
+    <div class="container">
+        
+        <div class="deal-otd-title">
+            <h2>Shop By Categories</h2>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-category">
+
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/01.png" alt="">
+                                <a href="#"><p>Home</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/02.png" alt="">
+                                <a href="#"><p>Accessories</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/03.png" alt="">
+                                <a href="#"><p>Garden</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/04.png" alt="">
+                                <a href="#"><p>Machinery</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/05.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/06.png" alt="">
+                                <a href="#"><p>sharees</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/07.png" alt="">
+                                <a href="#"><p>Machinery</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/06.png" alt="">
+                                <a href="#"><p>sharees</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/08.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/09.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/010.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/011.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/012.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="category-products-item">
+                                <img src="assets/images/brands/013.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Category -->
+
+
+<section class="main-women-collection-seciton">
+    <!-- Women categories title and navbar -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="women-collections-title-nav-wrapper">
+                        <div class="woment-title">
+                            <h2>Women Collections</h2>
+                        </div>
+                        <div class="women-categories-navbar">
+                            <nav>
+                                <div class="nav nav-tabs women-collection-navbar" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Ring</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Sharee</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Three Peice</a>
+    
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">jewelry</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Cosmetics</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Beauty</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Personal Care</a>
+    
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Women categorie items -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-content" id="nav-tabContent">
+
+                        <!-- First tabs -->
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                            <!-- wrapper -->
+                            <div class="women-section-wrapper">
+
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/ring3.png" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/ring3.png" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/ring3.png" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/ring3.png" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/ring3.png" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- wrapper -->
+                            <div class="women-section-wrapper">
+
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/ring3.png" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/ring3.png" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/ring3.png" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/ring3.png" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/ring3.png" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Second tabs -->
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                            <!-- wrapper -->
+                            <div class="women-section-wrapper">
+
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/s1.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/s2.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/s3.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/s1.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/s2.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- wrapper -->
+                            <div class="women-section-wrapper">
+
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/s1.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/s3.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/s2.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/s3.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/s1.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Third tabs -->
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+                            <!-- wrapper -->
+                            <div class="women-section-wrapper">
+
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/1.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/7.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/11.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/12.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/14.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- wrapper -->
+                            <div class="women-section-wrapper">
+
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/15.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/17.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/25.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/19.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="women-section-items">
+                                    <div class="women-thumb">
+                                        <img src="assets/images/photos/1.jpg" alt="">
+                                    </div>
+                                    <div class="women-contnet">
+                                        <h2>Your products title goes here</h2>
+                                        <p>Price : <b>$399</b></p>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+<!-- Tranding Banneer -->
+<section class="tranding-banner-section">
+    <div class="container">
+
+        <!-- Three column ads -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tranding-banner-wrapper">
+                    <div class="tranding-banner-items tranding-banner-three-column">
+                        <img src="assets/images/photos/9.jpg" alt="">
+                    </div>
+                    <div class="tranding-banner-items tranding-banner-three-column">
+                        <img src="assets/images/photos/16.jpg" alt="">
+                    </div>
+                    <div class="tranding-banner-items tranding-banner-three-column">
+                        <img src="assets/images/photos/slide-12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Two column ads -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tranding-banner-wrapper tranding-banner-wrapper-two">
+                    <div class="tranding-banner-items tranding-banner-items-two-v1">
+                        <img src="assets/images/photos/4.jpg" alt="">
+                    </div>
+                    <div class="tranding-banner-items tranding-banner-items-two-v2">
+                        <img src="assets/images/photos/22.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- One column banner ads -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tranding-banner-wrapper tranding-banner-wrapper-one-ads">
+                    <div class="tranding-banner-items tranding-banner-items-one-ads">
+                        <img src="assets/images/photos/iwc-banner.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- New Deal of the day -->
+<seciton class="deal-otd-section">
+    <div class="container">
+        <div class="deal-otd-title">
+            <h2>Deal Of The Day</h2>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-md-8">
+                <div class="deal-otd-wapper">
+
+                    <!-- Deal featured item -->
+                    <div class="deal-otd-featured-items">
+                        <div class="deal-otd-thumb">
+                             <img src="assets/images/photos/bh.png" alt="">
+                             <div class="discountRadius">
+                                 <span>-40%</span>
+                             </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="deal-otd-content">
+                            <h2>Your products title will be goes here</h2>
+                            <p class="deal-contnet"> accusantium laudantium, illum architecto officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur?</p>
+                            
+                            <!-- countdown -->
+                            <ul id="demo" class="coundown-wrapper">
+                                <div class="countdown-box">
+                                    <li class="circle days"></li><span>Day</span> 
+                                </div>  
+                                <div class="countdown-box">
+                                    <li class="circle hours"></li><span>Hour</span>
+                                </div>
+                                <div class="countdown-box">
+                                    <li class="circle minutes"></li><span>Minutes</span>
+                                </div>
+                                <div class="countdown-box">
+                                    <li class="circle seconds"></li><span>Second</span>
+                                </div>
+                              </ul>
+
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <p class="deal-price">Price: <b>$399</b></p>
+                            <button>Buy Now</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="deal-otd-banner-wrapper">
+                    <div class="deal-otd-item-box">
+                        <img src="assets/images/photos/8.png" alt="">
+                    </div>
+                    <div class="deal-otd-item-box">
+                        <img src="assets/images/photos/slide-12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</seciton>
+<!-- New Deal of the day -->
+
+<!-- mini ads box -->
+<!-- <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="main-mini-slider mt-1">
+                    <div class="mini-slider-column">
+                        <div class="hero-right-mini-slider">
+                            <img src="assets/images/photos/001.png" alt="">
+                        </div>
+                    </div>
+                    <div class="mini-slider-column">
+                        <div class="hero-right-mini-slider">
+                            <img src="assets/images/photos/002.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+
+<!-- bdbabashopping Brands -->
+<section class="bdbabaexpress-section p-2">
+    <div class="container my-4">
+
+        <div class="deal-otd-title">
+            <h2>Our Brands Partner</h2>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="main-express">
+                            
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/a.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/b.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/c.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/d.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/e.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/f.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/g.png" alt="">
+                    </div>
+                    <div class="express-main-box">
+                        <img src="assets/images/brands/h.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- bdbabashopping Brands -->
+
+
+
+<!-- Baby products -->
+<section class="best-selling-products-section">
+    <div class="container">
+        <!-- title -->
+        <div class="deal-otd-title">
+            <h2>Women Shoes</h2>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12">
+                <div class="main-best-selling-products">
+
+                    <!-- Start single products -->
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <div class="cat-right-product-thumb">
+                                <img src="assets/images/products/s1.jpg" alt="">
+                            </div>
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <div class="cat-right-product-thumb">
+                                <img src="assets/images/products/s2.jpg" alt="">
+                            </div>
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <div class="cat-right-product-thumb">
+                                <img src="assets/images/products/s3.jpg" alt="">
+                            </div>
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <div class="cat-right-product-thumb">
+                                <img src="assets/images/products/s4.jpg" alt="">
+                            </div>
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <div class="cat-right-product-thumb">
+                                <img src="assets/images/products/s5.jpg" alt="">
+                            </div>
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best-selling-product-box">
+                        <div class="cat-right-product-box">
+                            <div class="cat-right-product-thumb">
+                                <img src="assets/images/products/s2.jpg" alt="">
+                            </div>
+                            <a href="single.html"><h2>Realme 7i - 8GB RAM / 128 ROM - 64 MP Quad Camera</h2></a>
+
+                            <!-- Rating div -->
+                            <div class="cat-card-rating">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-half" aria-hidden="true"></i></a></li>
+                                    <li>(3 Rating)</li>
+                                </ul>
+                            </div>
+
+                            <!-- Price and Add to cart -->
+                            <div class="price-and-addto-cart">
+                                <p class="cat-product-price">$22,000</p>
+                                <p class="AddtoCart"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Baby products -->
+
+
+
+
+
+
+<!-- Banner ads  -->
+<section class="bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-banner-area">
+                    <div class="banner-box">
+                        <a href="#"><img src="assets/images/banner/three5.jpg" alt=""></a>
+                    </div>
+                    <div class="banner-box mobileHide">
+                        <a href="#"><img src="assets/images/banner/three4.jpg" alt=""></a>
+                    </div>
+                    <div class="banner-box mobileHide">
+                        <a href="#"><img src="assets/images/banner/three6.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Banner ads  -->
+
+<!-- Tranding Watch -->
+<section>
+    <div class="container mt-3 watch-container">
+        <!-- title -->
+        <div class="deal-otd-title">
+            <h2>Tranding Watch</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-1">
+                <div class="main-fruits">
+
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/w1.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                        <p class="fruits-buy-now"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/w6.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                        <p class="fruits-buy-now"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/w7.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                        <p class="fruits-buy-now"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/w4.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                        <p class="fruits-buy-now"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/w5.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                        <p class="fruits-buy-now"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                    </div>
+                    <!-- Start fruits Box -->
+                    <div class="fruits-box">
+                        <img src="assets/images/products/w7.webp" alt="">
+                        <a href="#"><h2>Apetito Pure Fruit Juice</h2></a>
+                        <p class="line-through">$120.20</p>
+                        <p class="fruits-price">$120.20</p>
+                        <p class="fruits-buy-now"><i class="fa fa-shopping-cart"></i> &nbsp; Add to cart</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Tranding Watch -->
+
+
+<!-- Best Beslite Products and Items -->
+<section>
+    <div class="container bestlite-container">
+        <div class="row">
+
+            <!-- Featured section -->
+            <div class="col-md-3">
+                <div class="featured-product-front-page draw">
+                    <span class="featured-discunt">-20%</span>
+                    <div class="featured-product-img">
+                        <img src="assets/images/photos/a.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="featured-contnet-hide">
+                        <button>See Offers</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right featured section -->
+            <div class="col-md-9">
+                <!-- title -->
+                <div class="deal-otd-title featured-new-title">
+                    <h2>Women Shoes</h2>
+                </div>
+
+                <div class="right-featured-products mt-4">
+
+                    <!-- Right items -->
+                    <div class="right-featured-items">
+                        <div class="right-items-title">
+                            <img src="assets/images/photos/aa.jpg" class="img-fluid" alt="">
+                        </div>
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <div class="right-items-title">
+                            <img src="assets/images/photos/bb.jpg" class="img-fluid" alt="">
+                        </div>
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <div class="right-items-title">
+                            <img src="assets/images/photos/ab.jpg" class="img-fluid" alt="">
+                        </div>
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+                    <div class="right-featured-items">
+                        <div class="right-items-title">
+                            <img src="assets/images/photos/ac.jpg" class="img-fluid" alt="">
+                        </div>
+                        <a href="#"><h2>Nature's Way, Alive!, Men's Energy Multivitamin-</h2></a>
+                        <p class="featured-price">$20.80</p>
+                        <button>Buy now</button>
+                    </div>
+
+                </div>
+                <div class="item-down-banner">
+                    <img src="assets/images/photos/banner.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Best Beslite Products and Items -->
+
+
+
+
+<!-- Our trade services0 -->
+<section>
+    <div class="container mb-4">
+        <div class="deal-otd-title">
+            <h2>Latest Blog & News</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-trade-services">
+
+                    <!-- Single items -->
+                    <div class="trade-service-box">
+                        <div class="trad-service-thumb">
+                            <img src="assets/images/products/corr2.jpg" alt="">
+                        </div>
+                        <div class="blog-date">
+                            <p>09</p>
+                            <p>FAB</p>
+                        </div>
+                        <div class="trad-content-area">
+                            <a href="#"><h2>Here your title blog title goes here</h2></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae natus iure, explicabo cumque ullam nostrum doloremque consequuntur officiis reprehenderit repudiandae.</p>
+                        </div>
+                        <div class="readmore-button">
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                    <!-- Single items -->
+                    <div class="trade-service-box">
+                        <div class="trad-service-thumb">
+                            <img src="assets/images/products/corr1.jpg" alt="">
+                        </div>
+                        <div class="blog-date">
+                            <p>09</p>
+                            <p>JAN</p>
+                        </div>
+                        <div class="trad-content-area">
+                            <a href="#"><h2>Here your title blog title goes here</h2></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae natus iure, explicabo cumque ullam nostrum doloremque consequuntur officiis reprehenderit repudiandae.</p>
+                        </div>
+                        <div class="readmore-button">
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                    <!-- Single items -->
+                    <div class="trade-service-box">
+                        <div class="trad-service-thumb">
+                            <img src="assets/images/products/corr2.jpg" alt="">
+                        </div>
+                        <div class="blog-date">
+                            <p>09</p>
+                            <p>FAB</p>
+                        </div>
+                        <div class="trad-content-area">
+                            <a href="#"><h2>Here your title blog title goes here</h2></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae natus iure, explicabo cumque ullam nostrum doloremque consequuntur officiis reprehenderit repudiandae.</p>
+                        </div>
+                        <div class="readmore-button">
+                            <button>Read More</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our trade services -->
+
+
+
+<!-- footer area-->
+<footer class="footer-area">
+
+    <div class="ClickTop">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+
+    <!-- start of footer middle-->
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget">
+                        <h4 class="widget-title">Location</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <label>Phone:</label>
+                                <a href="#">Toll Free (123) 456-7890</a>
+                            </li>
+                            <li>
+                                <label>Email:</label>
+                                <a href="#">mail@gmail.com</a>
+                            </li>
+                            <li>
+                                <label>Address:</label>
+                                <a href="#">Hatirpul</a>
+                            </li>
+                            <li>
+                                <label>WORKING DAYS/HOURS:</label>
+                            </li>
+                            <li>
+                                <a href="#">Mon - Sun / 9:00 AM - 8:00 PM</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget ml-lg-4">
+                        <h4 class="widget-title">My Account</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget ml-lg-4">
+                        <h4 class="widget-title">Quick Links</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget-instagram">
+                        <h4 class="widget-title">About NavieaSoft</h4>
+                        <ul class="widget-body">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Order History</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#">Custom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="bordr-bottom"></div>
+            <div class="footer-content d-flex">
+                <div class="footer-left">
+                    <p>
+                        Navieasoft eCommerce © 2020. All Rights Reserved
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer area -->
+
+
+
+    <!-- jquery js -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- bootstrap popper js -->
+    <script src="assets/js/popper.js"></script>
+    <!-- theme bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- isotop -->
+    <script src="assets/js/isotope.js"></script>
+
+    <!-- main js-->
+    <script src="assets/js/borhan.js"></script>
+</body>
+
+</html>
