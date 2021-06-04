@@ -13,6 +13,9 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
     <!-- Swiper css -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
@@ -44,7 +47,7 @@
 
                 <!-- Middle logo -->
                 <div class="mobile-header-logo">
-                    <a href="#"><img src="assets/images/bdbaba.png" class="img-fluid" alt=""></a>
+                    <a href="#"><img src="assets/images/logo.svg" class="img-fluid" alt=""></a>
                 </div>
 
                 <!-- Right Menus -->
@@ -62,10 +65,10 @@
     <div class="main-left-fixed-sidebar" id="LeftSidebar">
         <div class="sidebar-logo-close-icon">
             <div class="sidebar-logo-header">
-                <img src="assets/images/bdbaba.png" alt="">
+                <img src="assets/images/logo.svg" alt="">
             </div>
-            <div class="cross-icon">
-                <i class="fa fa-times" onclick="SidebarToggle()"></i>
+            <div class="cross-icon" id="CloseSidebar">
+                <i class="fa fa-times"></i>
             </div>
         </div>
 
@@ -335,7 +338,7 @@
              <div class="row align-items-center">
                 <div class="col-md-2">
                    <div class="logo-area">
-                       <a href="index.html"><img src="assets/images/bdbaba.png" alt=""></a>
+                       <a href="index.html"><img src="assets/images/logo.svg" alt=""></a>
                    </div>
                 </div>
                 <div class="col-md-7">
@@ -378,7 +381,9 @@
                 <div id="navbarSupportedContent">
                   <ul>
                     <li class="nav-item active">
-                      <i onclick="SidebarToggle()" class="fa fa-bars HomepageBar"></i>
+                      <div class="burger-menu-thumb" id="burgerBar">
+                          <img src="assets/images/icons/menu-white.svg" alt="">
+                      </div>
                     </li>
                     <li class="hover-mega-menu Electronics"> <a href="#">Electronics <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
                     
@@ -862,6 +867,115 @@
     </div>
 </section>
 
+<!-- Category -->
+<section class="category-section">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-category">
+
+                    <div class="swiper-container mini-categroy">
+                        <div class="swiper-wrapper">
+                            
+
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/01.png" alt="">
+                                <a href="#"><p>Home</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/02.png" alt="">
+                                <a href="#"><p>Accessories</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/03.png" alt="">
+                                <a href="#"><p>Garden</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/04.png" alt="">
+                                <a href="#"><p>Machinery</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/05.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/06.png" alt="">
+                                <a href="#"><p>sharees</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/07.png" alt="">
+                                <a href="#"><p>Machinery</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/06.png" alt="">
+                                <a href="#"><p>sharees</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/08.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/09.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/010.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/011.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/012.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mini-category-products-item">
+                                <img src="assets/images/brands/013.png" alt="">
+                                <a href="#"><p>Electronics</p></a>
+                            </div>
+                        </div>
+                            
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Category -->
+
 <!-- Fresh food ads two column -->
 <section class="fresh-food-section">
     <div class="container">
@@ -998,112 +1112,6 @@
         </div>
     </div>
 </section>
-
-
-<!-- Category -->
-<section class="category-section">
-    <div class="container">
-        
-        <div class="deal-otd-title">
-            <h2>Shop By Categories</h2>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-12">
-                <div class="main-category">
-
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/01.png" alt="">
-                                <a href="#"><p>Home</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/02.png" alt="">
-                                <a href="#"><p>Accessories</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/03.png" alt="">
-                                <a href="#"><p>Garden</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/04.png" alt="">
-                                <a href="#"><p>Machinery</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/05.png" alt="">
-                                <a href="#"><p>Electronics</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/06.png" alt="">
-                                <a href="#"><p>sharees</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/07.png" alt="">
-                                <a href="#"><p>Machinery</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/06.png" alt="">
-                                <a href="#"><p>sharees</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/08.png" alt="">
-                                <a href="#"><p>Electronics</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/09.png" alt="">
-                                <a href="#"><p>Electronics</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/010.png" alt="">
-                                <a href="#"><p>Electronics</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/011.png" alt="">
-                                <a href="#"><p>Electronics</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/012.png" alt="">
-                                <a href="#"><p>Electronics</p></a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="mini-category-products-item">
-                                <img src="assets/images/brands/013.png" alt="">
-                                <a href="#"><p>Electronics</p></a>
-                            </div>
-                        </div>
-
-                    </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Category -->
-
 
 <section class="main-women-collection-seciton">
     <!-- Women categories title and navbar -->

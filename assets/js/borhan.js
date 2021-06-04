@@ -1,14 +1,26 @@
 
+// New Sidebar toggle
+const sideBar = document.getElementById('LeftSidebar');
+const Bars = document.getElementById('burgerBar'); 
+Bars.addEventListener('click', function() {
+  sideBar.classList.toggle('active'); 
+})
+
+const CloseSidebar = document.getElementById('CloseSidebar');
+CloseSidebar.addEventListener('click', function() {
+  sideBar.classList.remove('active');
+})
+
 // Hero right slider
 var HeroRightSlider = new Swiper('.hero-right-slider', {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
     },
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
   });
 
 
@@ -24,9 +36,10 @@ $(document).ready(function(){
 
 
 
-var CategorySlider = new Swiper('.category-slider', {
+var miniCategroy = new Swiper('.mini-categroy', {
   slidesPerView: 4,
   spaceBetween: 10,
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -41,7 +54,7 @@ var CategorySlider = new Swiper('.category-slider', {
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 6,
+      slidesPerView: 10,
       spaceBetween: 10,
     },
   }
@@ -102,16 +115,19 @@ var ExpressSlider = new Swiper('.ExpressSlider', {
 
 
 
-// toggle left profile sidebar
-function SidebarToggle() {
-    var SidebarMenu = document.getElementById("LeftSidebar");
-    if (SidebarMenu.style.display === "none" || SidebarMenu.style.display === "") {
-      SidebarMenu.style.display = "block";
 
-    } else {
-      SidebarMenu.style.display = "none";
-    }
-  }
+
+
+// toggle left profile sidebar
+// function SidebarToggle() {
+//     var SidebarMenu = document.getElementById("LeftSidebar");
+//     if (SidebarMenu.style.display === "none" || SidebarMenu.style.display === "") {
+//       SidebarMenu.style.display = "block";
+
+//     } else {
+//       SidebarMenu.style.display = "none";
+//     }
+//   }
   
 
 
