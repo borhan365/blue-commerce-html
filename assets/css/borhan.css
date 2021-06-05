@@ -214,9 +214,10 @@ nav.cat-menu ul li a i {
 .best-selling-products-section {
 }
 .main-best-selling-products {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 6px;
+    width: 100%;
 }
 .category-section {
     margin: 20px 0px;
@@ -1260,10 +1261,10 @@ a.submit-btn.btn-outline-primary {
     box-shadow: rgb(231, 230, 230) 0px 0px 10px 0px;
 }
 .main-fruits {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 10px;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 6px;
+    width: 100%;
 }
 .fruits-box {
     background: white;
@@ -1271,10 +1272,18 @@ a.submit-btn.btn-outline-primary {
     box-shadow: rgba(211, 211, 211, 0.54) 0px 0px 10px 0px;
     border-radius: 5px;
     width: 100%;
+    min-height: 294px;
+    overflow: hidden;
+    position: relative;
+}
+.fruit-thumb {
+    width: 100%;
+    height: 200px;
 }
 .fruits-box img {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
 }
 .fruits-box a {
 }
@@ -1473,24 +1482,6 @@ a.submit-btn.btn-outline-primary {
     width: 90%;
 }
 .transationImage p {
-}
-.main-banner-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 20px;
-    padding: 20px 0px;
-}
-.banner-box {
-    width: 100%;
-    overflow: hidden;
-}
-.banner-box img {
-    width: 100%;
-    transition: all 1s ease 0s;
-}
-.banner-box img:hover {
-    transform: scale(1.1) rotate(0.02deg);
 }
 .main-thankyou-page {
     width: 100%;
@@ -2256,12 +2247,12 @@ a.submit-btn.btn-outline-primary {
 }
 .cat-right-product-thumb {
     width: 100%;
-    height: 275px;
+    height: 230px;
 }
 .cat-right-product-thumb img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .featured-contnet-hide {
 }
@@ -2281,11 +2272,13 @@ a.submit-btn.btn-outline-primary {
     text-align: center;
     position: absolute;
     bottom: -18px;
-    width: 179px;
+    width: 100%;
     opacity: 0;
     transition: all 0.5s linear 0s;
     cursor: pointer;
     font-size: 14px;
+    left: 0px;
+    right: 0px;
 }
 .fruits-box:hover .fruits-buy-now {
     opacity: 1;

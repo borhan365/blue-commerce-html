@@ -233,6 +233,41 @@
     }
     .featured-items-big {
         width: 100%;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+
+    }
+    .featured-items-big::after {
+        content: '';
+        position: absolute;
+        bottom: -50px;
+        left: 0px;
+        right: 0px;
+        height: 30%;
+        background: linear-gradient(to bottom, #f8f9fa05 0%, #00000063 50%, #000000 100%);
+        width: 100%;
+        overflow: hidden;
+        z-index: 0;
+        transition: all 0.3s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .featured-items-big:hover::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 30%;
+        background: linear-gradient(to bottom, #f8f9fa05 0%, #00000063 50%, #000000 100%);
+        width: 100%;
+        overflow: hidden;
+        z-index: 0;
+        transition: all 0.3s ease-in-out;
+        visibility: visible;
+        opacity: 1;
     }
     .featured-big-thumb {
         width: 100%;
@@ -245,7 +280,7 @@
         transition: var(--animate);
     }
     .featured-big-thumb img:hover {
-        transform: scale(1.1);
+        transform: scale(0.9);
     }
     .featured-item-right-mini-wrapper {
         display: grid;
@@ -253,12 +288,79 @@
         width: 100%;
         grid-gap: 10px;
     }
+    
+    /* category product title */
+    .main-cat-title-wrapper {
+        position: absolute;
+        bottom: -50px;
+        left: 50px;
+        z-index: 10;
+        transition: all 0.3s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .featured-items-big:hover .main-cat-title-wrapper {
+        visibility: visible;
+        opacity: 1;
+        bottom: 20px;
+    }
+    .featured-cat-title {
+
+    }
+    .featured-cat-title h2 {
+        font-size: 22px;
+        color: white;
+    }
+    .featured-cat-title-hover-mask {
+
+    }
+    .featured-cat-title-hover-mask p {
+        font-size: 14px;
+        color: #c1f102;
+    }
+
+    .main-cat-min-title-wrapper{
+        position: absolute;
+        bottom: 13px;
+        left: -100px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+
+    }
     .featued-mini-box {
         position: relative;
         width: 100%;
+        overflow: hidden;
+    }
+    .featued-mini-box::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 42%;
+        background: linear-gradient(to bottom, #f8f9fa05 0%, #0000007a 50%, #020202f2 100%);
+        width: 100%;
+        overflow: hidden;
+        z-index: 0;
+        transition: all 0.3s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .featued-mini-box:hover::after {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* Mini box content hover effect */
+    .featued-mini-box:hover .main-cat-min-title-wrapper {
+        visibility: visible;
+        opacity: 1;
+        left: 20px;
+        z-index: 1;
     }
     .featured-mini-thumb img:hover{
-        transform: scale(1.1);
+        transform: scale(0.9);
     }
     .featured-mini-thumb {
         width: 100%;
@@ -268,6 +370,7 @@
     .featured-mini-thumb img {
         width: 100%;
         height: 100%;
+        object-fit: contain;
         transition: all 0.4s linear;
     }
 
@@ -318,6 +421,7 @@
     .tab-product-thumb img {
         width: 100%;
         height: 100%;
+        object-fit: contain;
         transition: all 0.4s linear;
 
     }
@@ -880,33 +984,6 @@
         color: var(--black);
         font-weight: 600;
         font-size: 13px;
-    }
-
-
-    /* category product title */
-    .main-cat-title-wrapper {
-        position: absolute;
-        bottom: 20px;
-        left: 50px;
-    }
-    .featured-cat-title {
-
-    }
-    .featured-cat-title h2 {
-        font-size: 22px;
-    }
-    .featured-cat-title-hover-mask {
-
-    }
-    .featured-cat-title-hover-mask p {
-        font-size: 14px;
-        color: gray;
-    }
-
-    .main-cat-min-title-wrapper{
-        position: absolute;
-        bottom: 13px;
-        left: 20px;
     }
 
     /* single blog detils */
