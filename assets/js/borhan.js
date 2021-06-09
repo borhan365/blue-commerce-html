@@ -11,6 +11,9 @@ CloseSidebar.addEventListener('click', function() {
   sideBar.classList.remove('active');
 })
 
+// Animate items
+new WOW().init();
+
 // Hero right slider
 var HeroRightSlider = new Swiper('.hero-right-slider', {
     loop: true,
