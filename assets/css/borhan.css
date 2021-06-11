@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
 * {
@@ -12,7 +12,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: rgb(247, 248, 250) !important;
+  /* background: rgb(247, 248, 250) !important; */
+  background: white;
 }
 header,
 footer {
@@ -68,6 +69,12 @@ p:last-child {
 }
 .container {
   max-width: 1280px !important;
+}
+.card-header, .card, .card-body {
+  border: 1px solid rgb(214 214 214 / 17%) !important;
+}
+.card-body {
+  background: white !important;
 }
 :root {
   --brandColor: rgb(0 64 130);
@@ -415,7 +422,6 @@ nav.cat-menu ul li a i {
   border: none;
 }
 .cart-section {
-  background: rgb(244, 244, 244);
 }
 .card-left-container {
 }
@@ -425,7 +431,8 @@ nav.cat-menu ul li a i {
   justify-content: space-between;
   background: white;
   padding: 10px;
-  box-shadow: rgba(119, 136, 153, 0.04) 0px 0px 10px 0px;
+  /* box-shadow: rgba(119, 136, 153, 0.04) 0px 0px 10px 0px; */
+  border: 1px solid #d3d3d36b;
 }
 .select-all span {
 }
@@ -492,7 +499,7 @@ nav.cat-menu ul li a i {
 }
 .cart-product-increse-decrese .plus:hover,
 .cart-product-increse-decrese .minus:hover {
-  background: orangered;
+  background: var(--brandColor);
   cursor: pointer;
 }
 .category-slider {
@@ -514,8 +521,10 @@ nav.cat-menu ul li a i {
   background: white;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: rgba(119, 136, 153, 0.04) 0px 0px 10px 0px;
+  box-shadow: rgb(119 136 153 / 13%) 0px 0px 10px 0px;
   width: 100%;
+  position: sticky;
+  top: 35px;
 }
 .cart-right-order-summery span {
   font-size: 14px !important;
@@ -1686,14 +1695,14 @@ a.submit-btn.btn-outline-primary {
 .inCart-total p {
 }
 .checkoutBtn {
-  background: orangered;
+  background: var(--brandColor);
   color: white;
   border: none;
 }
 .checkoutBtn:hover {
   color: white;
   border: none;
-  background: rgb(221, 60, 2) !important;
+  background: var(--brandColor) !important;
 }
 .main-order-left-side {
   background: white;
@@ -1702,15 +1711,13 @@ a.submit-btn.btn-outline-primary {
 .main-order-left-side h2 {
   font-size: 18px;
   color: rgb(255, 255, 255);
-  margin: 0px 0px 10px;
-  background: rgb(0, 58, 0);
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 10px;
+  background: var(--brandColor);
   font-weight: 500;
-  clip-path: polygon(0px 0px, 0px 95%, 83% 100%, 100% 0%, 100% 0px);
-  width: max-content;
-  padding-right: 45px !important;
+  padding: 9px;
+  border-radius: 5px;
+  padding-left: 17px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .main-order-box {
 }
@@ -1729,7 +1736,7 @@ a.submit-btn.btn-outline-primary {
   border: none;
 }
 .OrdercheckoutBtn {
-  background: var(--brandColorDark);
+  background: var(--brandColor);
   border: none;
 }
 .payment-left-sidebar {
@@ -1802,9 +1809,11 @@ a.submit-btn.btn-outline-primary {
   margin: 0px 0px 12px;
   font-size: 23px;
   text-transform: capitalize;
+  border-left: 4px solid var(--brandColor);
+  padding-left: 10px;
+  border-radius: 5px;
 }
-.StyleOnetitle h2::after {
-}
+
 .featured-column {
   height: 340px;
   padding: 20px 10px 10px;
@@ -2239,7 +2248,7 @@ a.submit-btn.btn-outline-primary {
   color: white;
 }
 .trade-service-box:hover .trad-service-thumb img {
-  transform: scale(1.2) translate(-25px, 0px);
+  transform: scale(0.9);
 }
 .trade-service-box:hover .blog-date {
   background: orangered;

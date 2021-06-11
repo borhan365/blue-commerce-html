@@ -3,9 +3,6 @@
 
     /* Hero section
     ==================== */
-    .hero-section {
-        background: #f8f8f8;
-    }
 
     .hero-left-sidebar {
         background: white;
@@ -133,9 +130,7 @@
 
     /* Hero section
     ==================== */
-    .hero-section {
-        background: #f8f8f8;
-    }
+
 
     .hero-left-sidebar {
         background: white;
@@ -217,8 +212,12 @@
         text-align: center;
         padding: 20px 0px;
     }
+    .feature-categories-title .justNow {
+        color: green;
+        font-weight: bolder;
+    }
     .feature-categories-title p {color: gray;margin: 0px;}
-    .feature-categories-title h2 {padding: 8px 0px;color: var(--black);}
+    .feature-categories-title h2 {padding: 8px 0px;color: var(--black); text-transform: uppercase;}
     .feature-categories-title p:last-child {
 
     }

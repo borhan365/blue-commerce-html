@@ -7,22 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ecommerce Home Page</title>
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/icons/shopping-bag.svg">
+
     <!-- bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
 
     <!-- Swiper css -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
     <!-- theme css -->
     <link rel="stylesheet" href="assets/css/borhan.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/woomart.css">
 
     <!-- responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
     <!-- Font awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
 </head>
 
@@ -31,20 +40,20 @@
 <!-- Mobile Menu section -->
 <section>
     <div class="row">
-        <div class="col-sm-12 col-md-12">
+        <div class="col-md-12 col-sm-12">
             <div class="mobile-header-menu-section">
                 <!-- Left Barger menu icon -->
-                <div class="bargerMenu">
+                <div class="bargerMenu" onclick="OpenMobileMenu()">
                     <i class="fa fa-bars"></i>  
                 </div>
 
                 <!-- Middle logo -->
                 <div class="mobile-header-logo">
-                    <a href="index.html"><img src="assets/images/bdbaba.png" class="img-fluid" alt=""></a>
+                    <a href="#"><img src="assets/images/logo.svg" class="img-fluid" alt=""></a>
                 </div>
 
                 <!-- Right Menus -->
-                <div class="right-mobile-menu">
+                <div class="right-mobile-menu" onclick="MobileCartSidebarToggle()">
                     <i class="fa fa-shopping-basket"></i>  &nbsp;<span class="badge badge-light">0</span>
                 </div>
             </div>
@@ -58,10 +67,10 @@
     <div class="main-left-fixed-sidebar" id="LeftSidebar">
         <div class="sidebar-logo-close-icon">
             <div class="sidebar-logo-header">
-                <img src="assets/images/bdbaba.png" alt="">
+                <img src="assets/images/logo.svg" alt="">
             </div>
-            <div class="cross-icon">
-                <i class="fa fa-times" onclick="SidebarToggle()"></i>
+            <div class="cross-icon" id="CloseSidebar">
+                <i class="fa fa-times"></i>
             </div>
         </div>
 
@@ -82,15 +91,26 @@
         <!-- Menus -->
         <div class="sidebar-middle-menus">
             <ul>
-                <li><a href="#">Orders <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
-                <li><a href="#">GiftCard <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
-                <li><a href="#">Campains <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
-                <li><a href="#">Follwing Shops <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
-                <li><a href="#">Shop <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
-                <li><a href="#">BDBabaShopping Express <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
-                <li><a href="#">Newsfeed <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
-                <li><a href="#">Career <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
-                <li><a href="#">LogOut <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                <li><a href="#">Mobile <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Men <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Women <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Kids <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Toys <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Electronics Devices <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Sports<span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Necklace <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Earrings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Rings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Anklet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Locket Pen dust <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Fair Sticks <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bracelet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bras less <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Nose Pin <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry Box <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Stone Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
             </ul>
         </div>
 
@@ -202,6 +222,116 @@
 </section>
 <!-- Right cart sidebar fixed -->
 
+
+<!-- Mobile Footer Fixed menu -->
+<section class="mobileFooter-fixed-navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-mobile-footer-menu">
+                    <div class="footerMenuItems footerHome">
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>  <span>Home</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerChat">
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>  <span>Chat</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerCart">
+                        <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerAccount">
+                        <a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>  <span>Account</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Footer Fixed menu -->
+
+<!-- Top Header -->
+<section class="topHeader-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="top-left-section">
+                    <p>Hotline: +88 0180000000000</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="top-right-side">
+
+                    <!-- My Account -->
+                    <div class="dropdown show language-box">
+                        <a class="btn dropdown-toggle languageBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            My Account 
+                        </a>
+                        
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> Bangla
+                            </a>
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> English
+                            </a>
+
+                        </div>
+                    </div>
+                    
+                    <!-- Language -->
+                    <div class="dropdown show language-box">
+                        <a class="btn dropdown-toggle languageBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Language 
+                        </a>
+                        
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> Bangla
+                            </a>
+
+                            <a class="dropdown-item languageItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> English
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Main category -->
+                    <!-- <div class="threeMenu">
+                        <li><a class="importer" href="registation.html">Importer &nbsp;</a></li>
+                        <li><a class="marchent" href="registation.html">&nbsp; Vendor &nbsp;</a></li>
+                        <li><a class="vendor" href="registation.html">&nbsp; marchent</a></li>
+                    </div> -->
+
+                    <!-- Currency -->
+                    <div class="dropdown show currency-box">
+                        <a class="btn dropdown-toggle currencyBtn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/images/others/bd.svg" alt="" style="width: 20px;"> BDT
+                        </a>
+                        
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+
+                            <a class="dropdown-item currencyItem" href="#">
+                                <img src="assets/images/others/bd.svg" alt=""> BDT
+                            </a>
+
+                            <a class="dropdown-item currencyItem" href="#">
+                                <img src="assets/images/others/usa.svg" alt=""> USD
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Top Header -->
+
+
 <header class="header-area">
 
     <!-- Header middle -->
@@ -209,8 +339,8 @@
         <div class="container">
              <div class="row align-items-center">
                 <div class="col-md-2">
-                   <div class="logo-area">
-                       <a href="index.html"><img src="assets/images/bdbaba.png" alt=""></a>
+                   <div class="logo-area wow animate__animated animate__fadeInDown">
+                       <a href="index.html"><img src="assets/images/logo.svg" alt=""></a>
                    </div>
                 </div>
                 <div class="col-md-7">
@@ -247,29 +377,217 @@
     <!--header bottom-->
     <div class="header-bottom" id="MainMenu">
         <div class="container">
-            <nav class="navbar navbar-expand-lg headerNavbar">
+            <nav class="headerNavbar">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fa fa-bars"></i>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto align-items-center">
+                <div id="navbarSupportedContent">
+                  <ul>
                     <li class="nav-item active">
-                      <i onclick="SidebarToggle()" class="fa fa-bars HomepageBar"></i>
+                      <div class="burger-menu-thumb" id="burgerBar">
+                          <img src="assets/images/icons/menu-white.svg" alt="">
+                      </div>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Ready to Ship</a>
+                    <li class="hover-mega-menu Electronics"> <a href="#">Electronics <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                    
+                        <div class="main-hover-mega-menu-wrapper">
+    
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Women's Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Infant & Toddlers Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+    
+                        </div>
                     </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Disabled</a>
+                    <li class="hover-mega-menu"><a href="#">Home Apperal <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                        
+                        <div class="main-hover-mega-menu-wrapper">
+    
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Women's Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Infant & Toddlers Clothing</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-hover-menu-columns">
+                                <ul>
+                                    <li><a href="#"><b style="color: #ff8100">Home Heaters</b></a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+    
+                        </div>
                     </li>
+                    <li><a href="category.html">Man Fashions</a></li>
+                    <li><a href="category.html">Women Fashions</a></li>
+                    <li><a href="category.html">Jewelry</a></li>
+                    <li><a href="category.html">Baby products</a></li>
+                    <li><a href="category.html">Electronics</a></li>
                   </ul>
-                  <ul class="ml-auto">
-                    <li><a href="">Get the App |</a></li>
-                    <li><a href="">English- USD</a></li>
-                  </ul>
+                  <li>
+                      <div class="button_container">
+                        <a href="all-shop.html"><button class="btn"><span>Shop List</span></button></a>
+                    </div>
+                    </li>
                 </div>
               </nav>
         </div>
@@ -331,7 +649,81 @@
                                     </div>
                                 </div>
                             </div>
-                          </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 100%">
+                            <div class="card-header bg-white">
+                                <div class="form-check d-flex justify-content-between">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label cart-product-header-label" for="exampleCheck1">Samsung > Glaxay grand prime plus</label>
+                                    <span class="cart-delete-item"><i class="fa fa-trash" aria-hidden="true"></i> DELETE</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-2">
+                                        <div class="cart-product-image">
+                                            <img src="assets/images/products/p5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="cart-product-name-and-details">
+                                            <h2>Samsung Galaxy M21 - 4GB RAM/64GB ROM - 6.4" Super AMOLED Display - Triple Camera - 6,000 mAh Battery</h2>
+                                            <p>Samsung, Color Family:Black</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <div class="card-product-price">
+                                            <span>৳ 18,999</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="cart-product-increse-decrese text-right">
+                                            <span class="Carts minus" onclick="decreseNumber()">-</span>
+                                            <input type="text" class="cart-product-item" id="textBox" value="1">
+                                            <!-- <span class="cart-product-item">0</span> -->
+                                            <span class="Carts plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 100%">
+                            <div class="card-header bg-white">
+                                <div class="form-check d-flex justify-content-between">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label cart-product-header-label" for="exampleCheck1">Samsung > Glaxay grand prime plus</label>
+                                    <span class="cart-delete-item"><i class="fa fa-trash" aria-hidden="true"></i> DELETE</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-2">
+                                        <div class="cart-product-image">
+                                            <img src="assets/images/products/p5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="cart-product-name-and-details">
+                                            <h2>Samsung Galaxy M21 - 4GB RAM/64GB ROM - 6.4" Super AMOLED Display - Triple Camera - 6,000 mAh Battery</h2>
+                                            <p>Samsung, Color Family:Black</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <div class="card-product-price">
+                                            <span>৳ 18,999</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="cart-product-increse-decrese text-right">
+                                            <span class="Carts minus" onclick="decreseNumber()">-</span>
+                                            <input type="text" class="cart-product-item" id="textBox" value="1">
+                                            <!-- <span class="cart-product-item">0</span> -->
+                                            <span class="Carts plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
