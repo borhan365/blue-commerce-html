@@ -150,6 +150,8 @@
         grid-template-columns: 21% 79%;
         width: 100%;
         overflow: hidden;
+        border: 1px solid #d3d3d361;
+        border-top: unset;
     }
     .hero-single-slide {
         position: relative;
